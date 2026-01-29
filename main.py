@@ -168,7 +168,7 @@ class worker(QtCore.QThread):
                         covenantFoundResult: tuple = covenantLocation["result"]
                         doubleClick(
                             device,
-                            covenantFoundResult[0] + 800,
+                            covenantFoundResult[0] + 560,
                             covenantFoundResult[1] + 40,
                         )
 
@@ -231,7 +231,7 @@ class worker(QtCore.QThread):
                         mysticFoundResult: tuple = mysticLocation["result"]
                         doubleClick(
                             device,
-                            mysticFoundResult[0] + 800,
+                            mysticFoundResult[0] + 560,
                             mysticFoundResult[1] + 40,
                         )
 
@@ -354,7 +354,7 @@ class worker(QtCore.QThread):
                         QtCore.QThread.sleep(1)
 
                 else:
-                    device.swipe(1400, 500, 1400, 200, 0.1)
+                    device.swipe(1000, 500, 1400, 200, 0.1)
                     needRefresh = True
 
                     QtCore.QThread.sleep(1)
